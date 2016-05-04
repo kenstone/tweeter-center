@@ -54,7 +54,7 @@ const collectPhrases = (words: string[], tweet: Tweet, phrases: Phrase[]) => {
 };
 
 const cleanPhrase = (phrase) => {
-    return phrase.replace(':','').replace(';','').replace('RT ','').replace("#angularjs", '').replace('#AngularJS', '').replace(' to ',' ').replace(' for ','').replace(' a ').replace(' the ',' ').replace(' in ',' ').replace(' Angular ','').replace('#javascript','').replace(' with ',' ').replace(' at ',' ').replace(' by ',' ').replace(' of ', ' ').replace('@ngconf','').replace('#ngconf','').replace('#angular2','').replace(' is ', ' ').replace('The','');
+    return phrase.replace(':','').replace(';','').replace('RT ','').replace("#angularjs", '').replace('#AngularJS', '').replace(' to ',' ').replace(' for ','').replace(' a ').replace(' the ',' ').replace(' in ',' ').replace(' Angular ','').replace('#javascript','').replace(' with ',' ').replace(' at ',' ').replace(' by ',' ').replace(' of ', ' ').replace('@ngconf','').replace('#ngconf','').replace('#angular2','').replace(' is ', ' ').replace('The','').replace('Angular','');
 }
 
 export {splitIntoSingleWordPhrases, splitIntoTwoWordPhrases}
