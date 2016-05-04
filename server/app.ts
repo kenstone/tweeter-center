@@ -17,7 +17,7 @@ app.get('/tweets', (req, res) => {
     const endTime = req.query.endTime;
     
     const sqlQuery = `SELECT id, retweet_count, tweet_text, tweeted_by, tweet_id, created_at, timestamp
-                      FROM dbo.tweets WHERE timestamp >= @startTime AND timestamp <= @endTime`;
+                      FROM dbo.tweets WHERE timestamp >= @startTime AND timestamp <= @endTime ORDER BY timestamp`;
     
     const request = new sql.Request();
     request.input('startTime', sql.DateTime, new Date(startTime));
