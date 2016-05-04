@@ -51,7 +51,7 @@ class App extends React.Component<AppProps, any> {
     
     
     clearSelected = (e) => {
-        this.phraseSelected(null);
+        this.phraseSelected({});
     }
     
     

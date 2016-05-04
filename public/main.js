@@ -21868,7 +21868,7 @@
 	            _this.setState({ selectedPhrase: phrase });
 	        };
 	        _this.clearSelected = function (e) {
-	            _this.phraseSelected(null);
+	            _this.phraseSelected({});
 	        };
 	        return _this;
 	    }
