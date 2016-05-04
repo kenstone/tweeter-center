@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/tweets', function (req, res) {
     var startTime = req.query.startTime;
     var endTime = req.query.endTime;
-    var sqlQuery = "SELECT id, retweet_count, tweet_text, tweeted_by, tweet_id, created_at, timestamp\n                      FROM dbo.tweets WHERE timestamp >= @startTime AND timestamp <= @endTime ORDER BY timestamp";
+    var sqlQuery = "SELECT id, retweet_count, tweet_text, tweeted_by, tweet_id, created_at, timestamp\n                      FROM dbo.tweets WHERE timestamp >= @startTime AND timestamp <= @endTime ORDER BY timestamp DESC";
     var request = new sql.Request();
     request.input('startTime', sql.DateTime, new Date(startTime));
     request.input('endTime', sql.DateTime, new Date(endTime));
