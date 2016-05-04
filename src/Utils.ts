@@ -7,7 +7,7 @@ require("whatwg-fetch");
 require("moment");
 
 const loadTweets = (dispatch: Dispatch, startTime: moment.Moment, endTime?: moment.Moment) => {
-    const url = `http://localhost:3000/tweets?startTime=${startTime.toISOString()}&endTime=${endTime.toISOString()}`
+    const url = `https://ngconftweets.azurewebsites.net/tweets?startTime=${startTime.toISOString()}&endTime=${endTime.toISOString()}`
     dispatch(setRefreshingTweets(true));
     fetch(url)
         .then(checkStatus)

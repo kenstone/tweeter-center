@@ -21902,7 +21902,7 @@
 	__webpack_require__(198);
 	__webpack_require__(199);
 	var loadTweets = function loadTweets(dispatch, startTime, endTime) {
-	    var url = "http://localhost:3000/tweets?startTime=" + startTime.toISOString() + "&endTime=" + endTime.toISOString();
+	    var url = "https://ngconftweets.azurewebsites.net/tweets?startTime=" + startTime.toISOString() + "&endTime=" + endTime.toISOString();
 	    dispatch(TweetActions_1.setRefreshingTweets(true));
 	    fetch(url).then(checkStatus).then(function (response) {
 	        return response.json();
