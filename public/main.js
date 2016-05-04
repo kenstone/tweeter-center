@@ -36239,7 +36239,7 @@
 	    });
 	};
 	var cleanPhrase = function cleanPhrase(phrase) {
-	    return phrase.replace(':', '').replace(';', '').replace('RT ', '').replace("#angularjs", '').replace('#AngularJS', '').replace(' to ', ' ').replace(' for ', '').replace(' a ').replace(' the ', ' ').replace(' in ', ' ').replace(' Angular ', '').replace('#javascript', '').replace(' with ', ' ').replace(' at ', ' ').replace(' by ', ' ').replace(' of ', ' ').replace('@ngconf', '').replace('#ngconf', '').replace('#angular2', '').replace(' is ', ' ').replace('The', '').replace('Angular', '');
+	    return phrase.replace(':', '').replace(';', '').replace('RT ', '').replace("#angularjs", '').replace('#AngularJS', '').replace(' to ', ' ').replace(' for ', '').replace(' a ').replace(' the ', ' ').replace(' in ', ' ').replace(' Angular ', '').replace('#javascript', '').replace(' with ', ' ').replace(' at ', ' ').replace(' by ', ' ').replace(' of ', ' ').replace('@ngconf', '').replace('#ngconf', '').replace('#angular2', '').replace(' is ', ' ').replace('The', '').replace('Angular', '').replace(' and ', '');
 	};
 
 /***/ },
